@@ -225,6 +225,15 @@ async def health() -> dict:
     return {"status": "ok", "service": "taxpy-api", "time": datetime.utcnow().isoformat()}
 
 
+@app.get("/")
+async def root() -> dict:
+    return {
+        "service": "taxpy-api",
+        "status": "ok",
+        "endpoints": ["/health", "/usage/{user_id}", "/ask", "/docs"],
+    }
+
+
 @app.get("/usage/{user_id}")
 async def usage(
     user_id: str,

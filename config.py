@@ -115,6 +115,7 @@ TELEGRAM_DB_PATH = Path(
 # API MVP (web -> backend Python)
 # ============================================
 API_SERVER_HOST = os.getenv("API_SERVER_HOST", "0.0.0.0")
-API_SERVER_PORT = int(os.getenv("API_SERVER_PORT", "8000"))
+# Railway expone el puerto en PORT; local mantiene API_SERVER_PORT.
+API_SERVER_PORT = int(os.getenv("PORT", os.getenv("API_SERVER_PORT", "8000")))
 API_ACCESS_TOKEN = os.getenv("API_ACCESS_TOKEN", "")
 API_DB_PATH = Path(os.getenv("API_DB_PATH", str(BASE_DIR / "taxpy_api.sqlite3")))
