@@ -1751,11 +1751,11 @@ def generate_node(state: RAGState) -> dict:
             t = "Circular"
         key = f"{c}|{f}|{i}"
         if key in jur_seen:
-            continue
+            return
         jur_seen.add(key)
         label = _build_pron_label(t, c)
         if (not label) or label.strip().upper() in {"N/A", "N/A N/A"}:
-            continue
+            return
         if c.upper() == "N/A" and t.upper() == "N/A" and not r:
             return
         jur_items.append(
@@ -1879,11 +1879,9 @@ def generate_node(state: RAGState) -> dict:
     ]
     juris_context = "\n".join(jur_lines) if jur_lines else "(sin jurisprudencia en contexto)"
     has_juris_evidence = bool(jur_lines)
-    # Si hay evidencia jurisprudencial recuperada, exigir su sección también en
-    # consultas telegráficas (ej: "17 numero 8") aunque no digan "jurisprudencia".
-    juris_required = has_juris_evidence and (
-        asks_jurisprudencia or bool(question_article_num) or bool(jur_items)
-    )
+    # Regla de producto: siempre incluir sección de jurisprudencia en la respuesta.
+    # Si no hay evidencia, declararlo explícitamente.
+    juris_required = True
     juris_mode_instructions = (
         "MODO ESPECIAL (pregunta de jurisprudencia):\n"
         "- Prioriza la siguiente estructura y puedes omitir secciones no críticas:\n"
@@ -2126,9 +2124,12 @@ def generate_node(state: RAGState) -> dict:
                 "REQUISITO DE JURISPRUDENCIA:\n"
                 "{juris_required_text}\n"
                 "Si dice 'SI', es OBLIGATORIO incluir la sección "
-                "'### 4. Jurisprudencia Relacionada (SII)' inmediatamente "
-                "después de '### 3. Referencias Cruzadas', usando TODOS los "
-                "pronunciamientos listados en la evidencia.\n\n"
+                "'### 4. Jurisprudencia Relacionada' inmediatamente "
+                "después de '### 3. Referencias Cruzadas'. Dentro de esa sección, "
+                "usa este orden obligatorio:\n"
+                "- #### 4.1 Jurisprudencia Administrativa (SII)\n"
+                "- #### 4.2 Jurisprudencia Judicial\n"
+                "y utiliza TODOS los pronunciamientos listados en la evidencia.\n\n"
                 "INSTRUCCIÓN DE MODO:\n"
                 "{juris_mode_instructions}\n\n"
                 "Pregunta: {question}\n\n"
@@ -2152,39 +2153,42 @@ def generate_node(state: RAGState) -> dict:
         "juris_mode_instructions": juris_mode_instructions,
     })
 
-    # Refuerzo determinístico: si hay evidencia de jurisprudencia y el modelo
-    # no la refleja bien (caso observado con circulares), anexamos una sección
-    # automática basada en metadata recuperada.
-    if jur_items:
-        top_items = jur_items[:top_juris]
-        already_has_juris_heading = re.search(
-            r"###\s*(?:2|4)\.\s*Jurisprudencia|###\s*Jurisprudencia Relacionada",
-            answer,
-            re.IGNORECASE,
-        ) is not None
-        already_has_non_na_ref = re.search(
-            r"Referencia jurisprudencial[^\n]*:\s*(?!N/?A\b).+",
-            answer,
-            re.IGNORECASE,
-        ) is not None
-        has_any_label = any(item["label"] in answer for item in top_items)
-        has_admin_item = any(
-            any(t in (it.get("tipo", "").upper()) for t in ("OFICIO", "CIRCULAR", "RESOLU"))
-            for it in top_items
-        )
-        mentions_admin = any(k in answer.upper() for k in ("OFICIO", "CIRCULAR", "RESOLUCION"))
+    # Refuerzo determinístico: la respuesta final SIEMPRE debe incluir
+    # jurisprudencia administrativa y judicial (en ese orden), aunque el
+    # LLM la omita.
+    top_items = jur_items[:top_juris]
+    admin_items = [
+        it for it in top_items
+        if any(t in (it.get("tipo", "").upper()) for t in ("OFICIO", "CIRCULAR", "RESOLU"))
+    ]
+    judicial_items = [
+        it for it in top_items
+        if "SENTENCIA" in (it.get("tipo", "").upper())
+    ]
 
-        needs_autofix = ((not has_any_label) or (has_admin_item and not mentions_admin))
-        if already_has_juris_heading and already_has_non_na_ref:
-            needs_autofix = False
+    already_has_juris_heading = re.search(
+        r"###\s*(?:2|4)\.\s*Jurisprudencia|###\s*Jurisprudencia Relacionada",
+        answer,
+        re.IGNORECASE,
+    ) is not None
+    already_has_non_na_ref = re.search(
+        r"Referencia jurisprudencial[^\n]*:\s*(?!N/?A\b).+",
+        answer,
+        re.IGNORECASE,
+    ) is not None
 
-        if needs_autofix:
-            auto_lines = [
-                "",
-                "### Jurisprudencia Relacionada (SII) — Verificación automática",
-            ]
-            missing_items = [it for it in top_items if it["label"] not in answer]
-            for item in missing_items:
+    needs_autofix = (not already_has_juris_heading) or (not already_has_non_na_ref)
+
+    if needs_autofix:
+        auto_lines = [
+            "",
+            "### 4. Jurisprudencia Relacionada — Verificación automática",
+            "",
+            "#### 4.1 Jurisprudencia Administrativa (SII)",
+        ]
+
+        if admin_items:
+            for item in admin_items:
                 pdf = item["pdf_url"] if item["pdf_url"] and item["pdf_url"] != "N/A" else "No disponible"
                 resumen = item["resumen"] or "No disponible."
                 auto_lines.extend(
@@ -2198,7 +2202,33 @@ def generate_node(state: RAGState) -> dict:
                         f"  - **Resumen del criterio**: {resumen}",
                     ]
                 )
-            answer = answer.rstrip() + "\n\n" + "\n".join(auto_lines)
+        else:
+            auto_lines.append(
+                "- No se encontró jurisprudencia administrativa SII suficiente en el contexto recuperado."
+            )
+
+        auto_lines.extend(["", "#### 4.2 Jurisprudencia Judicial"])
+        if judicial_items:
+            for item in judicial_items:
+                pdf = item["pdf_url"] if item["pdf_url"] and item["pdf_url"] != "N/A" else "No disponible"
+                resumen = item["resumen"] or "No disponible."
+                auto_lines.extend(
+                    [
+                        f"- **Referencia jurisprudencial**: {item['label']}",
+                        f"  - **Tipo**: {item['tipo']}",
+                        f"  - **Código interno**: {item['codigo']}",
+                        f"  - **Fecha**: {item['fecha']}",
+                        f"  - **Instancia**: {item['instancia']}",
+                        f"  - **Link PDF**: {pdf}",
+                        f"  - **Resumen del criterio**: {resumen}",
+                    ]
+                )
+        else:
+            auto_lines.append(
+                "- No se encontró jurisprudencia judicial suficiente en el contexto recuperado."
+            )
+
+        answer = answer.rstrip() + "\n\n" + "\n".join(auto_lines)
 
     return {"answer": answer}
 
