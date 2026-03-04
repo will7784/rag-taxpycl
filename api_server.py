@@ -305,7 +305,7 @@ class ApiUsageStore:
         )
 
 
-store = ApiUsageStore(config.API_DB_PATH, config.DATABASE_URL)
+store = ApiUsageStore(config.API_DB_PATH, getattr(config, "DATABASE_URL", ""))
 
 
 class AskRequest(BaseModel):
