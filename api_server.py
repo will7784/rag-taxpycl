@@ -14,6 +14,7 @@ from rich.console import Console
 
 import config
 from rag_graph import RAGGraph
+from vector_store import VectorStoreManager
 
 try:
     import psycopg
@@ -357,6 +358,27 @@ async def root() -> dict:
         "status": "ok",
         "endpoints": ["/health", "/usage/{user_id}", "/ask", "/docs"],
     }
+
+
+@app.get("/rag-stats")
+async def rag_stats(
+    authorization: str | None = Header(default=None),
+    x_api_key: str | None = Header(default=None),
+) -> dict:
+    if not _is_token_valid(authorization, x_api_key):
+        raise HTTPException(status_code=401, detail="Unauthorized")
+    try:
+        vs = VectorStoreManager()
+        info = vs.get_collection_stats()
+        return {
+            "status": "ok",
+            "collection_name": info.get("collection_name"),
+            "total_documents": int(info.get("total_documents", 0)),
+            "persist_directory": info.get("persist_directory"),
+        }
+    except Exception as e:
+        console.print(f"[red]API /rag-stats error[/red] err={e}")
+        raise HTTPException(status_code=500, detail="Error interno leyendo vector store")
 
 
 @app.get("/usage/{user_id}")
