@@ -1,0 +1,26 @@
+# Jurisprudencia SII - 73712-2020
+
+## Metadata
+- source_type: jurisprudencia_sii
+- jurisprudencia_id: 16560
+- cuerpo_normativo_id: 2
+- articulo_id: 38
+- articulo_nombre: 31
+- fecha: 2020-07-29
+- tipo_pronunciamiento: Sentencia
+- instancia: Corte Suprema
+- codigo_pronunciamiento: 73712-2020
+- pdf_url: N/A
+- pdf_descargado: no
+
+## Resumen
+Pérdida Tributaria - Indeminización - Artículo 31 de la Ley sobre Impuesto a la Renta
+
+## Contenido
+Santiago, veintinueve de julio de dos mil veinte. Vistos y teniendo presente: Primero: Que de conformidad con lo dispuesto en el artículo 782 del Código de Procedimiento Civil, se ha ordenado dar cuenta del recurso de casación en el fondo deducido por el abogado don José Jara Gutiérrez, en representación del contribuyente Proyectos y Desarrollos Limitada, en contra de la sentencia dictada por la Corte de Apelaciones de Santiago, que confirmó la de primer grado, que rechazó el reclamo deducido en contra de resolución que rechazó la devolución solicitada por pérdida tributaria. Segundo: Que tal decisión, en concepto del recurrente, configura en primer término la infracción de lo dispuesto en los artículos 47 y 1698 del Código Civil, así como la infracción de lo dispuesto en los artículos 21 y 132 del Código Tributario, normas todas refiere, que regulan el valor probatorio de los documentos acompañados a los autos, su admisibilidad y su apreciación comparativo Señala que en la presente causa, se produjo la inversión del onus probandi, así como se violó el principio de la sana crítica que rige en lo que a la valoración de la prueba se refiere, en este tipo de procedimientos. En otro capítulo de su arbitrio, señala como infringidos los artículos 1698, 1702, 1706 y 1731 del Código Civil, así como lo dispuesto en el inciso 14 del artículo 132 del Código Tributario, toda vez que señala que hubo una falta de ponderación de la prueba que la Ley expresamente acepta y que fue acompañada sin que fuera objetada ni observada la misma por parte del Servicio de Impuestos Internos. Tercero: Que, según señala el artículo 782 del Código de Procedimiento Civil, elevado un proceso en casación de fondo el tribunal debe examinar si la sentencia objeto del recurso es de aquéllas contra las cuales lo concede la ley, y si reúne los requisitos que se establecen en los incisos primero de los artículos 772 y 776 del texto legal citado. Cuarto: Que, a su vez, de acuerdo a lo prevenido en el artículo 772 N° 1) del Código de Procedimiento Civil, el escrito en que se deduzca el recurso de casación en el fondo debe señalar en qué consiste el o los errores de derecho de que adolece la sentencia recurrida, y el modo en que ése o ésos errores influyen sustancialmente en lo dispositivo de la sentencia. Quinto: Que, analizado el recurso a la luz de las disposiciones legales referidas, sin perjuicio de haberse invocado normas que no son de aquellas precisamente decisoria litis, se aprecia que los jueces de la instancia al confirmar íntegramente el fallo de primera, no han incurrido en las infracciones denunciadas en el arbitrio, desde que como se lee en la sentencia, en el considerando 9° el Tribunal de la instancia se hace cargo de toda la prueba aportada al proceso, por lo que no resulta efectivo lo denunciado por el recurrente en dicho sentido, y que es objeto de uno de los capítulos de su líbelo. Asimismo, el fallo impugnado, en los considerandos 11 y siguientes, señala que el recurrente no aportó los antecedentes suficientes que acreditaran fehacientemente el crédito de impuesto de primera categoría que invoca así como la pérdida tributaria de los ejercicios anteriores, siendo de conformidad al artículo 21 del Código Tributario de su cargo hacerlo. De otro lado, en el considerando 13 señala la sentencia que de acuerdo a la jurisprudencia de nuestros Tribunales Superiores de Justicia, la indemnización pagada en virtud de una sentencia judicial, en razón de un incumplimiento contractual, si bien resulta obligatoria, no constituye un gasto necesario para producir la renta, por lo que mal podría considerarse aquella dentro de las pérdidas de arrastre. Por estas consideraciones, y de conformidad con lo previsto por el artículo 782 del Código de Procedimiento Civil, se declara inadmisible el recurso de casación en el fondo deducido, en contra de la sentencia de once de marzo de dos mil veinte. Regístrese y devuélvase. Rol N° 73.712-2020 Pronunciado por la Segunda Sala de la Corte Suprema integrada por los Ministros (as) Carlos Künsemüller L., Haroldo Osvaldo Brito C., Manuel Antonio Valderrama R., Jorge Dahm O., Leopoldo Andrés Llanos S. Santiago, veintinueve de julio de dos mil veinte. Autoriza el Ministro de Fe de la Excma. Corte Suprema En Santiago, a veintinueve de julio de dos mil veinte, notifiqué en Secretaría por el Estado Diario la resolución precedente. Este documento tiene firma electrónica y su original puede ser validado en http://verificadoc.pjud.cl o en la tramitación de la causa. En aquellos documentos en que se visualiza la hora, esta corresponde al horario establecido para Chile Continental.
+
+Pérdida Tributaria - Indeminización - Artículo 31 de la Ley sobre Impuesto a la Renta
+
+## Fuente
+- Servicio de Impuestos Internos (SII) - ACJ
+- Pronunciamiento ID: 16560

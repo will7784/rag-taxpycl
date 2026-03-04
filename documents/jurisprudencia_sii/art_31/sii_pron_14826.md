@@ -1,0 +1,28 @@
+# Jurisprudencia SII - 310-2018
+
+## Metadata
+- source_type: jurisprudencia_sii
+- jurisprudencia_id: 14826
+- cuerpo_normativo_id: 2
+- articulo_id: 38
+- articulo_nombre: 31
+- fecha: 2019-09-04
+- tipo_pronunciamiento: Sentencia
+- instancia: Corte de Apelaciones de Santiago
+- codigo_pronunciamiento: 310-2018
+- pdf_url: N/A
+- pdf_descargado: no
+
+## Resumen
+SE CONFIRMA SENTENCIA - TTA HA LUGAR EN PARTE - Devolución PPM -
+
+## Contenido
+CERTIFICO:  que se anunciaron para alegar, escucharon relación y alegaronel abogado don Víctor Rojas, por el recurso, y la abogada doña Elizabeth Gonzalez, contra el mismo. Santiago, cuatro de septiembre de dos mildiecinueve. Elizabeth Melero López Relatora C.A. de SantiagoSantiago, cuatro de septiembre de dos mil diecinueve.Proveyendo a fojas 208 y 2019, téngase presente. Vistos y teniendo presente: Que los documentos acompañados por la reclamante a fojas 197 y porel Servicio de Impuestos Internos a fojas 206, no hacen variar lo que vieneresuelto por el juez a quo, pues el primero de ellos, no es suficiente paraanalizar sobre la procedencia del crédito por activo fijo utilizado por elcontribuyente. Y los segundos, no señalan en forma alguna cómo losvectores de asociados a la observación A08 y el resumen de formularios 29del contribuyente, explicarían la subdeclaración de ingresos que alega el entefiscal.Por lo expresado precedentemente y atendido el mérito de autos, losfundamentos de la sentencia en alzada, los que son compartidos por estaCorte y lo dispuesto en los artículos 139 y siguientes del Código Tributario,  seconfirma  la sentencia de veintiséis de septiembre de dos mil dieciocho,escrita a fojas 143 y siguientes.Regístrese y devuélvase.N°Tributario Y Aduanero-310-2018.Pronunciada por la  Undécima Sala , integrada por los Ministros señor JuanManuel Muñoz Pardo, señor Fernando Carreño Ortega y por el abogadointegrante señor Cristian Lepin Molina. Autoriza el (la) ministro de fe de estaIltma. Corte de Apelaciones de Santiago. Santiago, cuatro de septiembre dedos mil diecinueve, se notificó por el estado diario la resolución que antecede. KKCRJMFEXN KKCRJMFEXN Pronunciado por la Undécima Sala de la C.A. de Santiago integrada por los Ministros (as) Juan Manuel Muñoz P.,Fernando Ignacio Carreño O. y Abogado Integrante Cristian Luis Lepin M. Santiago, cuatro de septiembre de dos mildiecinueve.En Santiago, a cuatro de septiembre de dos mil diecinueve, notifiqué en Secretaría por el Estado Diario la resoluciónprecedente. KKCRJMFEXN Este documento tiene firma electrónica y su originalpuede ser validado en http://verificadoc.pjud.cl o en latramitación de la causa.A contar del 07 de abril de 2019, la hora visualizadacorresponde al horario de invierno establecido en ChileContinental. Para la Región de Magallanes y la AntarticaChilena sumar una hora, mientras que para Chile InsularOccidental, Isla de Pascua e Isla Salas y Gómez restardos horas. Para más información consultehttp://www.horaoficial.cl.
+
+CERTIFICO:  que se anunciaron para alegar, escucharon relación y alegaronel abogado don xxxxxxxxxx, por el recurso, y la abogada doña xxxxxxxxxx, contra el mismo. Santiago, cuatro de septiembre de dos mildiecinueve. Elizabeth Melero López Relatora C.A. de SantiagoSantiago, cuatro de septiembre de dos mil diecinueve.Proveyendo a fojas 208 y 2019, téngase presente. Vistos y teniendo presente: Que los documentos acompañados por la reclamante a fojas 197 y porel Servicio de Impuestos Internos a fojas 206, no hacen variar lo que vieneresuelto por el juez a quo, pues el primero de ellos, no es suficiente paraanalizar sobre la procedencia del crédito por activo fijo utilizado por elcontribuyente. Y los segundos, no señalan en forma alguna cómo losvectores de asociados a la observación A08 y el resumen de formularios 29del contribuyente, explicarían la subdeclaración de ingresos que alega el entefiscal.Por lo expresado precedentemente y atendido el mérito de autos, losfundamentos de la sentencia en alzada, los que son compartidos por estaCorte y lo dispuesto en los artículos 139 y siguientes del Código Tributario,  seconfirma  la sentencia de veintiséis de septiembre de dos mil dieciocho,escrita a fojas 143 y siguientes.Regístrese y devuélvase.N°Tributario Y Aduanero-310-2018.Pronunciada por la  Undécima Sala , integrada por los Ministros señor JuanManuel Muñoz Pardo, señor Fernando Carreño Ortega y por el abogadointegrante señor Cristian Lepin Molina. Autoriza el (la) ministro de fe de estaIltma. Corte de Apelaciones de Santiago. Santiago, cuatro de septiembre dedos mil diecinueve, se notificó por el estado diario la resolución que antecede. KKCRJMFEXN KKCRJMFEXN Pronunciado por la Undécima Sala de la C.A. de Santiago integrada por los Ministros (as) Juan Manuel Muñoz P.,Fernando Ignacio Carreño O. y Abogado Integrante Cristian Luis Lepin M. Santiago, cuatro de septiembre de dos mildiecinueve.En Santiago, a cuatro de septiembre de dos mil diecinueve, notifiqué en Secretaría por el Estado Diario la resoluciónprecedente. KKCRJMFEXN Este documento tiene firma electrónica y su originalpuede ser validado en http://verificadoc.pjud.cl o en latramitación de la causa.A contar del 07 de abril de 2019, la hora visualizadacorresponde al horario de invierno establecido en ChileContinental. Para la Región de Magallanes y la AntarticaChilena sumar una hora, mientras que para Chile InsularOccidental, Isla de Pascua e Isla Salas y Gómez restardos horas. Para más información consultehttp://www.horaoficial.cl.
+
+SE CONFIRMA SENTENCIA - TTA HA LUGAR EN PARTE - Devolución PPM -
+
+## Fuente
+- Servicio de Impuestos Internos (SII) - ACJ
+- Pronunciamiento ID: 14826

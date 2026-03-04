@@ -1,0 +1,23 @@
+﻿{
+  "metaData": {
+    "namespace": "cl.sii.sdi.lob.juridica.acj.data.impl.InternetApplicationService/findPronunciamientos",
+    "conversationId": "1",
+    "transactionId": "manual-test-pron",
+    "page": null
+  },
+  "data": {
+    "text": null,
+    "tipoInstanciaId": 1,
+    "grupoInstanciaId": null,
+    "tipoCodigoId": null,
+    "codigo": null,
+    "ruc": null,
+    "instanciaId": null,
+    "tipoPronunciamientoId": null,
+    "cuerpoNormativoId": null,
+    "articulosIds": [799],
+    "reemplazos": [],
+    "fechaDesde": null,
+    "fechaHasta": null
+  }
+}

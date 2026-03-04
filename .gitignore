@@ -1,0 +1,26 @@
+# Entorno
+.env
+.venv/
+venv/
+
+# Python cache/build
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+.pytest_cache/
+
+# Logs
+logs/
+*.log
+
+# Bases/vector stores y artefactos locales
+chroma_db/
+*.sqlite3
+
+# IDE/SO
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

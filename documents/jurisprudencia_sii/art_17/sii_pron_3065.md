@@ -1,0 +1,28 @@
+# Jurisprudencia SII - 1342-2012
+
+## Metadata
+- source_type: jurisprudencia_sii
+- jurisprudencia_id: 3065
+- cuerpo_normativo_id: 2
+- articulo_id: 54
+- articulo_nombre: 17
+- fecha: 2013-04-08
+- tipo_pronunciamiento: Sentencia
+- instancia: Corte de Apelaciones de Santiago
+- codigo_pronunciamiento: 1342-2012
+- pdf_url: N/A
+- pdf_descargado: no
+
+## Resumen
+Ley Sobre Impuesto a la Renta – Artículo 18
+
+## Contenido
+Si se ha determinado el carácter de no habitual en la venta de acciones de parte de una sociedad no procede gravar con Impuesto Global Complementario a sus socios. Ley Sobre Impuesto a la Renta – Artículo 18 IMPUESTO UNICO – HABITUALIDAD – TRIBUTACIÓN DEL SOCIO - CORTE DE APELACIONES DE SANTIAGO – RECURSO DE APELACIÓN – SENTENCIA REVOCATORIA La Ilustrísima Corte de Apelaciones de Santiago revocó una sentencia definitiva de primera instancia que confirmó una liquidación emitida por el Servicio de Impuestos Internos que determinaba diferencias de Impuesto Global Complementario. El Tribunal de Alzada razonó señalado que la liquidación cuestionada tenía como causa la liquidación practicada a la sociedad en la cual la contribuyente tenía una participación del 95%. La sociedad en cuestión reclamó de la liquidación efectuada y el mismo tribunal de alzada resolvió respecto en dicha causa que era improcedente la calificación de habitual que hizo el Servicio de Impuestos Internos de la operación de venta de acciones que efectuó el ente social y confirmó la declaración de Impuesto a la Renta de Primera Categoría del período tributario en cuestión. Consecuencialmente a lo anterior, consideró la Corte de Apelaciones que correspondía dejar sin efecto la liquidación practicada a la reclamante ya que no procedía gravarla con Impuesto Global Complementario dado que la venta de acciones que se hizo en la sociedad fue ocasional y sólo ésta debía tributar con impuesto de primera categoría en carácter de único. El texto de la sentencia es el siguiente: “Santiago,ocho de abril de dos mil trece. Vistos: Se reproduce la sentencia en alzada con excepción de sus fundamentos quinto y séptimo, que se eliminan. Y se tiene en su lugar y además presente: 1°) Que se dispuso la vista una en pos de la otra de las causas roles N° 9133-2011; 1342-2012 y 1393-2012. 2°) Que la presente causa se refiere al reclamo deducido por doña XXXX en contra de la Liquidación N° 212-8, de 21 de junio de 2007, por diferencia de Impuesto Global Complementario, correspondiente al año tributario 2006 originada en la revisión practicada a la “Sociedad de Inversiones YYYY Ltda.” de la cual la reclamante es socia con un 95% de participación en el capital social. 3°) Que la Liquidación cuestionada tiene como causa la Liquidación practicada a la Sociedad antes aludida con el N° 72-8, de 12 de marzo de 2007, la que a su vez fue también reclamada por el ente social y corresponde al ingreso rol N° 9133-2011 ordenado ver antes que éste. 4°) Que por decisión de esta Corte se acogió el reclamo de la sociedad por considerar improcedente la calificación de habitual que hizo el Servicio de Impuestos Internos de la operación de venta de acciones efectuada el 24 de octubre de 2005 por el ente social, confirmando de esa forma la declaración de Impuesto a la Renta de Primera Categoría año tributario 2006 que hizo la sociedad en el carácter de único. 5°) Que como consecuencia de lo anterior, corresponde dejar sin efecto la liquidación practicada a la reclamante, puesto que no procede gravarla con Impuesto Global Complementario dado que la venta de acciones que se hizo en la sociedad de la cual ella es socia, ha sido ocasional y sólo tributa la sociedad en la forma que se ha indicado en el motivo anterior, y no el socio. Por estas consideraciones y lo dispuesto en el artículo 143 del Código tributario se revoca la sentencia apelada de once de enero de 2012, escrita a fojas 31 y en consecuencia se acoge el reclamo presentado en lo principal de fojas 2 y se deja sin efecto la Liquidación N° 212-8 de 21 de junio de 2007. Regístrese y en su oportunidad, devuélvase. Redacción de la Ministro señora Mireya López Miranda.” CORTE DE APELACIONES DE SANTIAGO – UNDÉCIMA SALA – 08.04.2013 – ROL N° 1342–2012 – MINISTROS SRES. HERNÁN CRISOSTO GREISSE – MIREYA EUGENIA LÓPEZ MIRANDA – ABOGADO INTEGRANTE SR. JOSÉ LUIS LÓPEZ REITZE 1
+
+Ley Sobre Impuesto a la Renta – Artículo 18
+
+La Ilustrísima Corte de Apelaciones de Santiago revocó una sentencia definitiva de primera instancia que confirmó una liquidación emitida por el Servicio de Impuestos Internos que determinaba diferencias de Impuesto Global Complementario. El Tribunal de Alzada razonó señalado que la liquidación cuestionada tenía como causa la liquidación practicada a la sociedad en la cual la contribuyente tenía una participación del 95%. La sociedad en cuestión reclamó de la liquidación efectuada y el mismo tribunal de alzada resolvió respecto en dicha causa que era improcedente la calificación de habitual que hizo el Servicio de Impuestos Internos de la operación de venta de acciones que efectuó el ente social y confirmó la declaración de Impuesto a la Renta de Primera Categoría del período tributario en cuestión. Consecuencialmente a lo anterior, consideró la Corte de Apelaciones que correspondía dejar sin efecto la liquidación practicada a la reclamante ya que no procedía gravarla con Impuesto Global Complementario dado que la venta de acciones que se hizo en la sociedad fue ocasional y sólo ésta debía tributar con impuesto de primera categoría en carácter de único.
+
+## Fuente
+- Servicio de Impuestos Internos (SII) - ACJ
+- Pronunciamiento ID: 3065

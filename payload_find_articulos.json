@@ -1,0 +1,11 @@
+﻿{
+  "metaData": {
+    "namespace": "cl.sii.sdi.lob.juridica.acj.data.impl.InternetApplicationService/findArticulos",
+    "conversationId": "1",
+    "transactionId": "manual-test-articulos",
+    "page": null
+  },
+  "data": {
+    "id": 2
+  }
+}

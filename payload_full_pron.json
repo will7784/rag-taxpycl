@@ -1,0 +1,11 @@
+﻿{
+  "metaData": {
+    "namespace": "cl.sii.sdi.lob.juridica.acj.data.impl.InternetApplicationService/getFullPronunciamiento",
+    "conversationId": "1",
+    "transactionId": "manual-test-full",
+    "page": null
+  },
+  "data": {
+    "id": 20140
+  }
+}

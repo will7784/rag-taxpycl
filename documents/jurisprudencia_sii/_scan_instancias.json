@@ -1,0 +1,117 @@
+{
+  "generated_at": "2026-03-03T10:02:37",
+  "cuerpo_id": 2,
+  "articulo_filter": "10",
+  "instancia_range": [
+    1,
+    12
+  ],
+  "max_pronunciamientos": 20,
+  "sample_get_full": 10,
+  "results": [
+    {
+      "articulo_id": 799,
+      "articulo_nombre": "10",
+      "instancias": [
+        {
+          "tipo_instancia_id": 1,
+          "status": "ok",
+          "items": 3,
+          "sampled_get_full": 3,
+          "get_full_errors": 0,
+          "tipo_pronunciamiento_sample": {
+            "Sentencia": 3
+          }
+        },
+        {
+          "tipo_instancia_id": 2,
+          "status": "ok",
+          "items": 0,
+          "sampled_get_full": 0,
+          "get_full_errors": 0,
+          "tipo_pronunciamiento_sample": {}
+        },
+        {
+          "tipo_instancia_id": 3,
+          "status": "ok",
+          "items": 0,
+          "sampled_get_full": 0,
+          "get_full_errors": 0,
+          "tipo_pronunciamiento_sample": {}
+        },
+        {
+          "tipo_instancia_id": 4,
+          "status": "ok",
+          "items": 0,
+          "sampled_get_full": 0,
+          "get_full_errors": 0,
+          "tipo_pronunciamiento_sample": {}
+        },
+        {
+          "tipo_instancia_id": 5,
+          "status": "ok",
+          "items": 0,
+          "sampled_get_full": 0,
+          "get_full_errors": 0,
+          "tipo_pronunciamiento_sample": {}
+        },
+        {
+          "tipo_instancia_id": 6,
+          "status": "ok",
+          "items": 0,
+          "sampled_get_full": 0,
+          "get_full_errors": 0,
+          "tipo_pronunciamiento_sample": {}
+        },
+        {
+          "tipo_instancia_id": 7,
+          "status": "ok",
+          "items": 0,
+          "sampled_get_full": 0,
+          "get_full_errors": 0,
+          "tipo_pronunciamiento_sample": {}
+        },
+        {
+          "tipo_instancia_id": 8,
+          "status": "ok",
+          "items": 0,
+          "sampled_get_full": 0,
+          "get_full_errors": 0,
+          "tipo_pronunciamiento_sample": {}
+        },
+        {
+          "tipo_instancia_id": 9,
+          "status": "ok",
+          "items": 0,
+          "sampled_get_full": 0,
+          "get_full_errors": 0,
+          "tipo_pronunciamiento_sample": {}
+        },
+        {
+          "tipo_instancia_id": 10,
+          "status": "ok",
+          "items": 0,
+          "sampled_get_full": 0,
+          "get_full_errors": 0,
+          "tipo_pronunciamiento_sample": {}
+        },
+        {
+          "tipo_instancia_id": 11,
+          "status": "ok",
+          "items": 0,
+          "sampled_get_full": 0,
+          "get_full_errors": 0,
+          "tipo_pronunciamiento_sample": {}
+        },
+        {
+          "tipo_instancia_id": 12,
+          "status": "ok",
+          "items": 0,
+          "sampled_get_full": 0,
+          "get_full_errors": 0,
+          "tipo_pronunciamiento_sample": {}
+        }
+      ]
+    }
+  ]
+}

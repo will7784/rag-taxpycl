@@ -1,0 +1,28 @@
+# Jurisprudencia SII - 471-2011
+
+## Metadata
+- source_type: jurisprudencia_sii
+- jurisprudencia_id: 2258
+- cuerpo_normativo_id: 2
+- articulo_id: 38
+- articulo_nombre: 31
+- fecha: 2012-07-24
+- tipo_pronunciamiento: Sentencia
+- instancia: Corte de Apelaciones de Copiapó
+- codigo_pronunciamiento: 471-2011
+- pdf_url: N/A
+- pdf_descargado: no
+
+## Resumen
+Ley sobre Impuesto a la Renta – Artículo 31 N° 3
+
+## Contenido
+Cuando el contribuyente sostiene que tiene derecho a la devolución del impuesto pagado debido a que tales utilidades fueron absorbidas por pérdidas tributarias, debe acreditar su derecho a obtener tal devolución. Ley sobre Impuesto a la Renta – Artículo 31 N° 3 PAGO PROVISIONAL POR UTILIDADES ABSORBIDAS – CARGA DE LA PRUEBA – CORTE DE APELACIONES DE COPIAPÓ – RECURSO DE APELACIÓN – SENTENCIA REVOCATORIA Esta sentencia se relaciona con el fallo dictado por el Tribunal Tributario y Aduanero de Copiapó con fecha 03-12-2011. La Iltma. Corte de Apelaciones de Copiapó revocó una sentencia dictada en primera instancia dictada por el Tribunal Tributario y Aduanero de Copiapó que había dejado sin efecto una resolución, que, a su vez,  había denegado la devolución de impuestos solicitada por el actor en su declaración anual del impuesto a la renta e hizo lugar a la petición devolución del impuesto de primera categoría pagado sobre utilidades absorbidas, por la suma de $ 4.029.113.- A juicio del tribunal de alzada la controversia -fijada en el auto de prueba-, radicaba en determinar si el contribuyente acreditó o no la existencia de una pérdida tributaria y su consecuencial derecho a obtener la devolución del impuesto de primera categoría pagado. Luego, en el juicio, el contribuyente no aportó antecedentes suficientes para acreditar la procedencia de dicha devolución por concepto de pagos por utilidades absorbidas que éste sostuvo le correspondían, esto es, su derecho a la pérdida tributaria, razón por la que consideró que correspondía rechazar el reclamo y revocó la sentencia de primera instancia apelada. El texto de la sentencia es el siguiente: “Copiapó, veinticuatro de julio de dos mil doce. VISTOS Se reproduce la sentencia en alzada, eliminándose los considerandos  sexto, décimo, undécimo, duodécimo, decimotercero, decimosexto, decimoséptimo, decimonoveno, vigésimo quinto y vigésimo sexto. En el fundamento vigésimo cuarto en su primera parte, hasta donde dice “y por otro lado,” suprimiendo la coma puesta al final, y sustituyendo a continuación la locución “el contribuyente” por “Que el contribuyente”, vigesimoquinto y vigesimosexto. Y TENIENDO, ADEMÁS, PRESENTE: 1° Que la controversia ha quedado delimitada en estos antecedentes en los términos que se señalan en el auto de prueba de fojas 221, resultando relevante en la especie determinar si se acreditó el derecho del contribuyente a la pérdida tributaria y establecer la pertinencia de la devolución, como un pago provisional del impuesto de primera categoría pagado sobre las utilidades absorbidas por un monto de $4.029.113.-, solicitada en su declaración de impuesto a la renta del año 2010. 2° Que atendido el mérito de los antecedentes, apreciados conforme a las reglas de sana crítica, tomando en consideración la multiplicidad, gravedad, precisión, concordancia y conexión de éstas, permiten dar por establecido que en la especie el contribuyente no aportó en autos prueba suficiente para acreditar la procedencia de su petición de devolución por concepto de pagos por utilidades absorbidas que alega corresponderle, esto es, su derecho a la pérdida, todo lo cual conduce indefectiblemente al rechazo de su reclamo. Por estas consideraciones y visto lo dispuesto en el artículo 139 del Código Tributario, SE RESUELVE: I.- Que SE REVOCA la sentencia definitiva de fecha tres de diciembre de dos mil once, escrita a fojas 413 y siguientes de autos, declarándose en su lugar, que se mantiene en todas sus partes la resolución objeto de este juicio, negándose lugar, en consecuencia, a la reclamación formulada por el contribuyente. II.- Que no se condena en costas al reclamante por haber tenido motivos plausibles para litigar. Regístrese, comuníquese y devuélvase con sus agregadas”. CORTE DE APELACIONES DE COPIAPÓ – ROL N° 471-2011 – MINISTROS SR. PABLO KRUMM DE ALMOZARA – SR. FRANCISCO SANDOVAL QUAPPE – SR. ÁLVARO CARRASCO LABRA – SRA. MIRTA ANGÉLICA LAGOS PINO
+
+Ley sobre Impuesto a la Renta – Artículo 31 N° 3
+
+- La Iltma. Corte de Apelaciones de Copiapó revocó una sentencia dictada en primera instancia por el Tribunal Tributario y Aduanero de Copiapó que había dejado sin efecto una resolución, que, a su vez, había denegado la devolución de impuestos solicitada por el actor en su declaración anual del impuesto a la renta e hizo lugar a la petición devolución del impuesto de primera categoría pagado sobre utilidades absorbidas, por la suma de $4.029.113.- - A juicio del tribunal de alzada la controversia -fijada en el auto de prueba-, radicaba en determinar si el contribuyente acreditó o no la existencia de una pérdida tributaria y su consecuencial derecho a obtener la devolución del impuesto de primera categoría pagado. - Luego, en el juicio, el contribuyente no aportó antecedentes suficientes para acreditar la procedencia de dicha devolución por concepto de pagos por utilidades absorbidas que éste sostuvo le correspondían, esto es, su derecho a la pérdida tributaria, razón por la que consideró que correspondía rechazar el reclamo y revocó la sentencia de primera instancia apelada.
+
+## Fuente
+- Servicio de Impuestos Internos (SII) - ACJ
+- Pronunciamiento ID: 2258

@@ -1,0 +1,28 @@
+# Jurisprudencia SII - GR-16-00145-2018
+
+## Metadata
+- source_type: jurisprudencia_sii
+- jurisprudencia_id: 16984
+- cuerpo_normativo_id: 2
+- articulo_id: 8
+- articulo_nombre: 21
+- fecha: 2019-12-26
+- tipo_pronunciamiento: Sentencia
+- instancia: Segundo Tribunal Tributario y Aduanero de la Región Metropolitana
+- codigo_pronunciamiento: GR-16-00145-2018
+- pdf_url: N/A
+- pdf_descargado: no
+
+## Resumen
+Doctrina de los Actos Propios – Gastos por Asesorías Externas – Necesariedad del Gasto – Artículos 21 y 31 de la Ley sobre Impuesto a la Renta
+
+## Contenido
+Formato no disponible para copiar
+
+Doctrina de los Actos Propios – Gastos por Asesorías Externas – Necesariedad del Gasto – Artículos 21 y 31 de la Ley sobre Impuesto a la Renta
+
+​El Segundo Tribunal Tributario y Aduanero de la Región Metropolitana de Santiago acogió el reclamo interpuesto por la contribuyente en contra de la liquidación que determinó diferencias de impuesto a la renta, por aplicación del impuesto único del artículo 21 de la ley del ramo, atendido el rechazo del gasto por concepto de asesorías externas. La contribuyente fundó su reclamo en la infracción al principio de confianza legítima y la doctrina de los actos propios, por cuanto el gasto de asesorías externas, cuestionado en la liquidación reclamada, se incorporó en las declaraciones de renta de los años anteriores, no habiendo sido objetado por el Servicio de Impuestos Internos. Al respecto, señaló que el fundamento sostenido por el órgano de administración para rechazar el gasto de asesorías externas, tiene como único fundamento la circunstancia consistente en que, el prestador del servicio y contribuyente fiscalizado, tienen un accionista en común, cuestionándose por tanto, la efectividad y procedencia del gasto. Concluyó su reclamo señalando, que atendido el beneficio directo de la asesoría, lo que representó ingresos para la sociedad, dicha asesoría se constituye como un costo el cual es admitido de conformidad a la legislación vidente, debiendo deducirse de la determinación de la renta, no siendo procedente la aplicación del impuesto único del artículo 21 de la Ley. Por su parte, el Servicio señaló respecto a la validación de la declaración de renta de los años anteriores de la contribuyente, que dicho proceso de revisión se realiza de manera automática, lo que no puede entenderse como un acto administrativo formal, de conformidad a la Ley N°19.880, no existiendo un derecho de propiedad sobre los montos declarados y devoluciones solicitadas, lo cual ha sido reafirmado por la legislación y la Jurisprudencia de los Tribunales Superiores de Justicia. Asimismo, el organismo fiscalizador en su arbitrio expuso que por existir el hecho económico con anterioridad a la vigencia de la ley N° 20.630, la norma aplicable a las liquidaciones reclamadas era el antiguo inciso quinto del artículo 17, N° 8 de la Ley sobre Impuesto a la Renta. La Corte Suprema indicó que quedaba de manifiesto que lo discutido se acotaba a determinar cuál es la norma aplicable al caso concreto, y en la cual la autoridad tributaria debió haber fundado sus actuaciones, esto es, la antigua norma del inciso 5° del artículo 17, N° 8, de la Ley sobre Impuesto la Renta o aquella vigente con posterioridad a la modificación introducida por la Ley N° 20.630. Al respecto, la Corte señaló que según se desprende de las liquidaciones reclamadas, el Servicio calculó los impuestos allí determinados, sobre una base imponible fijada conforme al artículo 64 del Código Tributario, a la fecha de la inscripción en la enajenación en el Registro de Propiedad de determinados bienes raíces de propiedad del reclamante. Producto de lo anterior, se establecieron diferencias de Impuestos. Agregó, que la regla general del Derecho Tributario, es que la ley que modifique una norma impositiva, establezca nuevos impuestos o suprima uno existente, en atención a la norma contenida en el inciso final del artículo 7° del Código Civil, regirá desde el día primero del mes siguiente al de su publicación, a menos que la misma ley establezca reglas especiales sobre su entrada en vigencia. En consecuencia, al haber establecido la Ley N° 20.630 reglas especiales sobre su entrada en vigencia, se deberá atender a estas y no a la general establecida en el Código Tributario. En relación a lo mismo, la Excelentísima Corte argumentó que conforme a lo expuesto, la tributación contemplada en el inciso quinto del artículo 17, N° 8, ya citado, necesariamente se generó luego del empleo de la facultad que la misma norma le concede al Servicio, la que, en consecuencia, debió aplicarse inevitablemente conforme la ley que la establece y, por tanto, conforme a la normativa vigente al momento de realizarla. Asimismo, indicó que en efecto, sólo una vez que el organismo fiscalizador ejerció la facultad de tasar del artículo 64 del Código Tributario, y determinó que la venta se hizo a un valor notoriamente superior al valor comercial de los inmuebles de características y ubicaciones similares en la localidad respectiva, nació el derecho a la autoridad de cobrar los impuestos que la misma disposición establece. Así, concluyó que corresponde aplicar la tasa del 35% sobre las cantidades que se determinan en virtud de lo dispuesto en el artículo 64 del Código Tributario, como ocurrió en el caso, de conformidad con la Ley N° 20.630, la cual, dada su época de entrada en vigencia, regía los hechos materia de las liquidaciones conocidas en estos autos. Por lo que, la impugnada no ha incurrido en los errores de derecho que le atribuye el arbitrio, el cual, por ende, ha de ser desestimado.
+
+## Fuente
+- Servicio de Impuestos Internos (SII) - ACJ
+- Pronunciamiento ID: 16984

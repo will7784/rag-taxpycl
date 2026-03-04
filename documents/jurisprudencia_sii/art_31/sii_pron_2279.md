@@ -1,0 +1,28 @@
+# Jurisprudencia SII - 6079-2011
+
+## Metadata
+- source_type: jurisprudencia_sii
+- jurisprudencia_id: 2279
+- cuerpo_normativo_id: 2
+- articulo_id: 38
+- articulo_nombre: 31
+- fecha: 2013-08-02
+- tipo_pronunciamiento: Sentencia
+- instancia: Corte de Apelaciones de Santiago
+- codigo_pronunciamiento: 6079-2011
+- pdf_url: N/A
+- pdf_descargado: no
+
+## Resumen
+Ley sobre Impuesto a la Renta - Artículo 31 N°3
+
+## Contenido
+La recuperación del Impuesto de Primera Categoría como PPUA por pérdidas, se determina aplicando directamente la tasa de dicho tributo sobre el monto de las utilidades de los ejercicios anteriores que resulten absorbidas. Ley sobre Impuesto a la Renta - Artículo 31 N°3 PAGO PROVISIONAL POR UTILIDADES ABSORBIDAS (PPUA) – INCREMENTO DE UTILIDADES – NULIDAD DE DERECHO PÚBLICO La Iltma. Corte de Apelaciones de Santiago confirmó una sentencia definitiva, dictada en primera instancia por el Director Regional del Servicio de Impuestos Internos, que había rechazado una reclamación tributaria presentada por un contribuyente en contra de la liquidación que determinó diferencias de impuestos por haber incrementado las utilidades absorbidas al momento de efectuar el cálculo del PPUA. En primer lugar, el contribuyente alegó la Nulidad de Derecho Público, siendo rechazada por el tribunal de alzada por cuanto la competencia para conocer de estas acciones se encuentra entregada a los tribunales ordinarios de justicia en razón de la materia. En segundo lugar, en cuanto al fondo, los sentenciadores concuerdan en que la norma tributaria no dispone que para efectuar el cálculo del pago provisional por utilidades absorbidas se deba aumentar previamente la utilidad que se absorbe. En efecto, cuando la ley así lo ha querido lo ha dispuesto expresamente como es el caso de los incisos finales de los artículos 54 N°1 y 62 de la Ley de Rentas. El texto de la sentencia es el siguiente: “Santiago, dos de Agosto de dos mil trece VISTOS: Se reproduce la sentencia en alzada; Y teniendo además presente: PRIMERO: Que en primer término el recurso, discurre sobre la pretensión de que se declare, la nulidad de la citación y de la Liquidación Reclamada, por haber sido ellas efectuadas, por la Dirección de Grandes Contribuyentes, creada por el Director Nacional del Servicio de Impuestos Internos, mediante Resolución N° 34 de 24 de agosto de 2001, vulnerando los artículos 6 y 7 de la Constitución Política de la República pues aquélla fue creada recién por ley 20.431 de 30 de abril de 2010. Para ello el recurso invoca tanto una nulidad Orgánica, como una nulidad Funcional. SEGUNDO: Que, sin perjuicio de los argumentos de fondo sobre la nulidad requerida, contenidos en los considerandos undécimo a décimo tercero del fallo, que estos sentenciadores comparten, debe agregarse que en los hechos se invoca una nulidad de derecho público. Pues bien al respecto, reiteradamente esta Corte ha sostenido que el procedimiento especial de reclamaciones, no resulta ser la vía para solicitarla, por lo que la apelación será rechazada en este aspecto. TERCERO: Que en cuanto al fondo, compartiendo los fundamentos del considerando noveno del fallo en alzada, estos sentenciadores concuerdan en que la norma tributaria no dispone que para efectuar cálculo del pago provisional por utilidades absorbidas se deba aumentar previamente la utilidad que se absorbe. En efecto cuando la ley así lo ha querido lo ha dispuesto expresamente como es el caso de los incisos finales de los artículos 54 N° 1 y 62 de la Ley de Rentas, para efectos de las utilidades declaradas en los impuestos Global Complementario. CUARTO: Que en consecuencia no cabe sino confirmar la Liquidación reclamada. Con lo expuesto, disposiciones legales citadas y lo dispuesto en los artículos 223 del Código de Procedimiento Civil y artículos 139, 140, 141, 143 y 148 del Código Tributario, se declara : Que se confirma la sentencia apelada de fecha veintinueve de  Abril de dos mil once, escrita de fojas 97 a 108, sin costas de la  instancia por estimar plausible el recurso. Regístrese y devuélvase.” CORTE DE APELACIONES DE SANTIAGO – UNDÉCIMA SALA – 02.08.2013– ROL N° 6079-2011 – MINISTROS SR. HERNÁN CRISOSTO GREISSE - MINISTRA SRA. MIREYA EUGENIA LÓPEZ MIRANDA – ABOGADO INTEGRANTE SRA. MARIANA DE LA PUENTE HERVE
+
+Ley sobre Impuesto a la Renta - Artículo 31 N°3
+
+La Iltma. Corte de Apelaciones de Santiago confirmó una sentencia definitiva, dictada en primera instancia por el Director Regional del Servicio de Impuestos Internos, que había rechazado una reclamación tributaria presentada por un contribuyente en contra de la liquidación que determinó diferencias de impuestos por haber incrementado las utilidades absorbidas al momento de efectuar el cálculo del PPUA. En primer lugar, el contribuyente alegó la Nulidad de Derecho Público, siendo rechazada por el tribunal de alzada por cuanto la competencia para conocer de estas acciones se encuentra entregada a los tribunales ordinarios de justicia en razón de la materia. En segundo lugar, en cuanto al fondo, los sentenciadores concuerdan en que la norma tributaria no dispone que para efectuar el cálculo del pago provisional por utilidades absorbidas se deba aumentar previamente la utilidad que se absorbe. En efecto, cuando la ley así lo ha querido lo ha dispuesto expresamente como es el caso de los incisos finales de los artículos 54 N°1 y 62 de la Ley de Rentas.
+
+## Fuente
+- Servicio de Impuestos Internos (SII) - ACJ
+- Pronunciamiento ID: 2279

@@ -1,0 +1,11 @@
+﻿{
+  "metaData": {
+    "namespace": "cl.sii.sdi.lob.juridica.acj.data.impl.InternetApplicationService/findGruposDeInstancia",
+    "conversationId": "1",
+    "transactionId": "manual-test-grupos",
+    "page": null
+  },
+  "data": {
+    "id": 1
+  }
+}

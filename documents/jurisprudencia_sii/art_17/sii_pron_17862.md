@@ -1,0 +1,28 @@
+# Jurisprudencia SII - 233-2021
+
+## Metadata
+- source_type: jurisprudencia_sii
+- jurisprudencia_id: 17862
+- cuerpo_normativo_id: 2
+- articulo_id: 54
+- articulo_nombre: 17
+- fecha: 2023-03-24
+- tipo_pronunciamiento: Sentencia
+- instancia: Corte de Apelaciones de Santiago
+- codigo_pronunciamiento: 233-2021
+- pdf_url: N/A
+- pdf_descargado: no
+
+## Resumen
+Contabilidad como medio de prueba – Carga de la prueba – Artículos 17 y 132 del CódigocTributario
+
+## Contenido
+C.A. de Santiago Santiago, veinticuatro de marzo de dos mil veintitrés. Proveyendo al escrito folio 35, téngase presente. Vistos: Se eliminan de la sentencia en alzada el acápite “Contenido y Diligencias del Proceso”, que se contiene en la parte expositiva, y los fundamentos Décimo Octavo y Vigésimo Noveno a Trigésimo Primero. Y se tiene en su lugar presente: Que la Compañía IYCSA solicitó al Servicio de Impuestos Internos la devolución de $116.734.430 y esa petición fue rechazada por Resolución N° xxx, de 9 de noviembre de 2015, que es aquella contra la cual se dedujo la reclamación tributaria materia de este proceso. Pues bien, el fallo impugnado decidió rechazar la reclamación y comparte esta Corte los fundamentos en que se sustentó tal determinación, expresadas en los motivos Vigésimo Tercero y Vigésimo Séptimo, puesto que al tratarse la contribuyente de una sociedad que tributa sobre la base de renta efectiva determinada mediante contabilidad completa, debió necesariamente, a fin de acreditar de modo debido los fundamentos de la devolución solicitada, acompañar el balance firmado por el contador o por el representante legal de la sociedad. En efecto, conforme lo dispone el inciso primero del artículo 17 del Código Tributario toda persona que deba acreditar la renta efectiva, lo hará mediante contabilidad fidedigna, salvo norma en contrario. Por su parte, el inciso primero del artículo 35 del mismo cuerpo legal prescribe que junto con sus declaraciones, los contribuyentes sujetos a la obligación de llevar contabilidad presentarán los balances y copia de los inventarios con la firma de un contador. La conclusión anterior no se contrapone con la regla de valoración de la prueba contenida en el inciso décimo tercero del artículo 132 del Código Tributario, que permite ponderar los antecedentes probatorios que se hagan valer en la reclamación tributaria conforme a las reglas de la sana crítica, pues la segunda parte del inciso siguiente del mismo precepto prevé de manera expresa que en aquellos casos en que la ley requiera probar mediante contabilidad fidedigna, el juez deberá ponderar preferentemente dicha contabilidad y ello es lo que ha acontecido en el caso de la especie. En las condiciones antes descritas, la decisión de primer grado debe ser mantenida. Por estas consideraciones y visto, además, lo dispuesto en las normas legales citadas y en los artículos 140 y siguientes del Código Tributario, se confirma la sentencia de diecinueve de marzo de dos mil veintiuno, dictada por el Primer Tribunal Tributario y Aduanero de la Región Metropolitana en la causa RIT N° GR-15-00012-2016, RUC N° 16-90000154-5. Regístrese y comuníquese.
+
+Contabilidad como medio de prueba – Carga de la prueba – Artículos 17 y 132 del CódigocTributario
+
+La Corte de Apelaciones de Santiago rechazó el recurso de apelación impetrado por la contribuyente en contra de la sentencia pronunciada por el Primer Tribunal Tributario de la Región Metropolitana que había rechazado el reclamo presentado en contra de una Resolución emitida por la XIV Dirección Regional Metropolitana Santiago Poniente que negó lugar a la solicitud de devolución de impuestos efectuada en su declaración de Impuesto a la Renta del Año Tributario 2013. La recurrente arguyó que la sentencia impugnada no se pronunció sobre la alegación de haber prescindido el Servicio de Impuestos Internos de su declaración, infringiendo así lo dispuesto por el artículo 21 del Código Tributario, tampoco se pronunció sobre la no existencia de Citación y ni siquiera se abrió un término probatorio. Por último, señaló que el fallo impugnado no valoró la prueba presentada, lo cual constituía una vulneración a lo dispuesto en el inciso 14 del artículo 132 del Código Tributario, desestimando el valor probatorio del balance por argumentos que no se ajustaban a derecho La Corte de Apelaciones señaló, que por tratarse la contribuyente de una sociedad que tributa sobre la base de renta efectiva determinada mediante contabilidad completa, debió necesariamente acompañar el balance firmado por el contador o por el representante legal, a objeto de acreditar debidamente los fundamentos de la devolución solicitada. La Magistratura agregó que, en efecto, como dispone el artículo 17 del Código Tributario, toda persona que deba acreditar la renta efectiva, lo hará mediante contabilidad fidedigna, salvo norma en contrario. Además, señaló que de acuerdo al inciso primero del artículo 35 del mismo cuerpo legal, los contribuyentes sujetos a la obligación de llevar contabilidad deben presentar junto con sus declaraciones los balances y copias de los inventarios con la firma de un contador. Finalmente, la Corte de Apelaciones arguyó que lo concluido no se contraponía con la regla de la valoración de la prueba contenida en el inciso décimo tercero del artículo 132 del citado código, que dispone de manera expresa que en aquellos casos en que la ley requiera probar mediante contabilidad fidedigna, el juez deberá ponderar preferentemente dicha contabilidad y ello es lo que ha acontecido en la especie.
+
+## Fuente
+- Servicio de Impuestos Internos (SII) - ACJ
+- Pronunciamiento ID: 17862

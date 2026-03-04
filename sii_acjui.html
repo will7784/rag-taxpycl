@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html ng-app="acj">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Sii | Servicio de impuestos internos</title>
+    <!-- librerías que incluyen lo necesario para operar responsivo -->
+	<!-- <script type="text/javascript" src="barranavresponsiva.js"></script>  -->
+	<script type="text/javascript" src="https://zeusr.sii.cl/admin/responsive_barranav.js"></script> 
+</head>
+	
+
+<!--  Dependencias de estilos que vienen de common-ui -->
+<link href="/common-1.0/css/sii-theme.min.css" type="text/css"
+	rel="stylesheet/css">
+<link href="/common-1.0/font-awesome-4.4.0/css/font-awesome.min.css"
+	type="text/css" rel="stylesheet/css">
+<link href="/common-1.0/css/sii-main.css" type="text/css"
+	rel="stylesheet/css">
+<link href="/common-1.0/css/sii-modal.css" type="text/css"
+	rel="stylesheet/css">
+<link href="/common-1.0/css/sii-messaging.css" type="text/css"
+	rel="stylesheet/css">
+<link rel="shortcut icon" href="/acjui/internet/favicon.png"/>  
+
+<!-- css acj ui -->
+<link rel="stylesheet" type="text/css" href="/acjui/comun/css/jquery-ui.min.css">
+<link href="/acjui/internet/css/estilos.css" rel="stylesheet">
+<link href="/acjui/internet/css/jquery.mmenu.all.css" type="text/css" rel="stylesheet" />
+<link rel="stylesheet" type="text/css" href="../comun/shared-styles.css">
+<link rel="stylesheet" type="text/css" href="/acjui/bower_components/textAngular/dist/textAngular.css">
+
+<link rel="stylesheet" href="/acjui/internet/css/styleUHL.css" media="screen" title="no title">
+
+<!--  DAX -->
+<script src="https://zeusr.sii.cl/admin/js/registro_visitas.js"></script>
+
+</head>
+<body id="acj-container-general">
+
+	<!-- Livereload script for development only (stripped during dist build) -->
+	<!-- <script src="http://localhost:35729/livereload.js" data-concat="false"></script> -->
+
+	<!-- JS from Bower Components
+	<script src="/acjui/bower_components/less.js/dist/less.js" data-concat="false"></script>
+	 -->
+<!--
+//-->
+</script>
+	
+	
+	<!-- Add New Component JS Above -->
+
+	<script src="/acjui/bower_components/jquery/dist/jquery.js"></script>
+	
+	<div id="my-wrapper">
+	  <!-- CABECERA -->
+	 <script type="text/javascript">
+			mostrar("");
+		</script>
+		
+		<!--  revisar miga -->
+		<style>
+			#miga{display:none;}
+		</style>
+	  <!-- FIN CABECERA -->
+	  
+	  <div ui-view id="acj-ui-contendor-general"></div>
+	  <!-- PIE -->
+	  <script type="text/javascript">mostrarPie()</script> 
+	  <!-- FIN PIE -->
+	</div>
+
+
+		<!-- Unholster -->
+
+	<link href="/acjui/internet/css/styleUHLPrint.css"
+		rel="stylesheet" media="print" type="text/css" />
+
+	
+	
+	<script src="/acjui/bower_components/lodash/dist/lodash.js"></script>
+	<script src="/acjui/bower_components/moment/moment.js"></script>
+	<script src="/acjui/bower_components/angular/angular.js"></script>
+	<script
+		src="/acjui/bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+	<script src="/acjui/bower_components/angular-animate/angular-animate.js"></script>
+	<script src="/acjui/bower_components/angular-resource/angular-resource.js"></script>
+	<script src="/acjui/bower_components/angular-route/angular-route.js"></script>
+	<script src="/acjui/bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+	<!-- Add New Bower Component JS Above -->
+
+	<!-- autocomplete and datepicker -->	
+	<script src="/acjui/comun/js/jquery-ui.min.js"></script>
+	<script src="/acjui/comun/js/datepicker-es.js"></script>
+	<script src="/acjui/comun/js/stickyfill.min.js"></script>
+	<script src="/acjui/comun/acj.js"></script>
+
+	<!--  las dependencias que provienen del commons-ui -->
+	<script src="/common-1.0/js/sii/settings.js"></script>
+	<script src="/common-1.0/js/sii/helpers.js"></script>
+	<script src="/common-1.0/js/sii/aa.js"></script>
+
+	<!-- Main App JS -->
+	<script src="/acjui/internet/app.js"></script>
+	<script src="/acjui/internet/comun/utils.js"></script>
+	<script src="/acjui/internet/comun/comun.js"></script>
+	<!-- <script src="/acjui/bower_components/angularjs-datetime-picker/angularjs-datetime-picker.min.js" charset="utf-8"></script> -->
+	<script src="/acjui/bower_components/angular-sanitize/angular-sanitize.js"></script>
+	<script src="/acjui/bower_components/moment/locale/es.js" charset="utf-8"></script> 
+	
+	<script src="/acjui/bower_components/pdfmake/build/pdfmake.min.js"></script>
+	<script src='/acjui/bower_components/pdfmake/build/vfs_fonts.js'></script>
+	<script src="/acjui/bower_components/jspdf/jspdf.min.js"></script>
+	<script src="/acjui/bower_components/jspdf/html2canvas.min.js"></script>
+	<script src="/acjui/bower_components/jspdf/html2pdf.min.js"></script>
+		
+	<script type="text/javascript"
+		src="/acjui/bower_components/angular-file-upload/dist/angular-file-upload.min.js"></script>
+
+	<script type="text/javascript"
+		src="/common-1.0/js/vendor/i18n/angular-locale_es-cl.js"></script>
+	
+	<script type="text/javascript" src="/acjui/internet/comun/factory/FactoryLoader.js" charset="utf-8"></script>
+		
+	<script src="/acjui/bower_components/textAngular/dist/textAngular-rangy.min.js"></script>
+	<script src="/acjui/bower_components/textAngular/dist/textAngular-sanitize.min.js"></script>
+	<script src="/acjui/bower_components/textAngular/dist/textAngular.min.js"></script>
+
+	<script src="/acjui/internet/acj_modules/dist/main-20190306-160915.js"></script>
+	
+</body>
+</html>
