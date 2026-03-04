@@ -341,7 +341,16 @@ def _doc_matches_juris_scope(
 
 def _is_admin_juris_question(question: str) -> bool:
     q = question.lower()
-    return any(term in q for term in ("oficio", "circular", "resolución", "resolucion"))
+    return any(
+        term in q
+        for term in (
+            "solo jurisprudencia administrativa",
+            "solo administrativa",
+            "solo sii",
+            "sin sentencias",
+            "no judicial",
+        )
+    )
 
 
 def _doc_is_admin_juris(doc: Document) -> bool:
@@ -890,7 +899,14 @@ def retrieve_node(state: RAGState) -> dict:
     q_lower = state["question"].lower()
     asks_jurisprudencia = any(
         term in q_lower
-        for term in ("jurisprudencia", "oficio", "circular", "resolución", "resolucion")
+        for term in (
+            "jurisprudencia",
+            "administrativa",
+            "oficio",
+            "circular",
+            "resolución",
+            "resolucion",
+        )
     )
     asks_admin_only = _is_admin_juris_question(state["question"])
     if asks_jurisprudencia:
@@ -1088,7 +1104,14 @@ def grade_documents_node(state: RAGState) -> dict:
     q_lower = question.lower()
     asks_jurisprudencia = any(
         term in q_lower
-        for term in ("jurisprudencia", "oficio", "circular", "resolución", "resolucion")
+        for term in (
+            "jurisprudencia",
+            "administrativa",
+            "oficio",
+            "circular",
+            "resolución",
+            "resolucion",
+        )
     )
     asks_admin_only = _is_admin_juris_question(question)
     article_num, law_filter = _detect_article_in_question(question)
@@ -1517,7 +1540,14 @@ def generate_node(state: RAGState) -> dict:
     q_lower = question.lower()
     asks_jurisprudencia = any(
         term in q_lower
-        for term in ("jurisprudencia", "oficio", "circular", "resolución", "resolucion")
+        for term in (
+            "jurisprudencia",
+            "administrativa",
+            "oficio",
+            "circular",
+            "resolución",
+            "resolucion",
+        )
     )
     asks_admin_only = _is_admin_juris_question(question)
     question_article_num, question_law_filter = _detect_article_in_question(question)
@@ -1681,17 +1711,17 @@ def generate_node(state: RAGState) -> dict:
         full_juris_cache[filename] = txt
         return txt
 
-    for doc in context:
+    def _append_jur_item(doc: Document, *, relaxed_scope: bool = False) -> None:
         if doc.metadata.get("source_type") != "jurisprudencia_sii":
-            continue
+            return
         if not _doc_matches_juris_scope(
             doc,
-            question_article_num,
-            question_sub_num,
+            None if relaxed_scope else question_article_num,
+            None if relaxed_scope else question_sub_num,
             question_law_filter,
             include_derogadas=include_derogadas,
         ):
-            continue
+            return
         text = doc.page_content
         filename = str(doc.metadata.get("filename", "") or "")
         full_text = _load_full_juris_text(filename)
@@ -1727,7 +1757,7 @@ def generate_node(state: RAGState) -> dict:
         if (not label) or label.strip().upper() in {"N/A", "N/A N/A"}:
             continue
         if c.upper() == "N/A" and t.upper() == "N/A" and not r:
-            continue
+            return
         jur_items.append(
             {
                 "label": label,
@@ -1739,8 +1769,35 @@ def generate_node(state: RAGState) -> dict:
                 "resumen": r,
             }
         )
+
+    for doc in context:
+        _append_jur_item(doc, relaxed_scope=False)
         if len(jur_items) >= 40:
             break
+
+    admin_types = ("OFICIO", "CIRCULAR", "RESOLU")
+
+    def _is_admin_item(item: dict[str, str]) -> bool:
+        return any(t in (item.get("tipo", "").upper()) for t in admin_types)
+
+    def _is_judicial_item(item: dict[str, str]) -> bool:
+        return "SENTENCIA" in (item.get("tipo", "").upper())
+
+    # Fallback: si el filtro estricto no trajo ambas familias (administrativa/judicial),
+    # relajar alcance por artículo dentro del mismo contexto recuperado para no perder
+    # cobertura, manteniendo filtro de ley cuando exista.
+    has_admin = any(_is_admin_item(it) for it in jur_items)
+    has_judicial = any(_is_judicial_item(it) for it in jur_items)
+    if (not has_admin) or (not has_judicial):
+        for doc in context:
+            if len(jur_items) >= 60:
+                break
+            if doc.metadata.get("source_type") != "jurisprudencia_sii":
+                continue
+            if (not has_admin) and _doc_is_admin_juris(doc):
+                _append_jur_item(doc, relaxed_scope=True)
+            if (not has_judicial) and (not _doc_is_admin_juris(doc)):
+                _append_jur_item(doc, relaxed_scope=True)
 
     # Regla de orden para presentación:
     # OFICIO → CIRCULAR → RESOLUCION → SENTENCIA → otros (y luego fecha desc).
@@ -1756,10 +1813,9 @@ def generate_node(state: RAGState) -> dict:
     # solo oficios/circulares/resoluciones; si no hay, no mostrar sentencias.
     # En modo normal, mantener ambas (administrativa + judicial), quedando
     # primero administrativa gracias al orden por prioridad de tipo.
-    admin_types = ("OFICIO", "CIRCULAR", "RESOLU")
     jur_admin = [
         it for it in jur_items
-        if any(t in (it.get("tipo", "").upper()) for t in admin_types)
+        if _is_admin_item(it)
     ]
     if asks_admin_only:
         jur_items = jur_admin
@@ -1797,6 +1853,16 @@ def generate_node(state: RAGState) -> dict:
                 x.get("fecha", ""),
             )
         )
+
+    # Orden final obligatorio de presentación:
+    # 1) Jurisprudencia administrativa (SII), 2) Jurisprudencia judicial (sentencias), 3) otros.
+    jur_admin_ordered = [it for it in jur_items if _is_admin_item(it)]
+    jur_judicial_ordered = [it for it in jur_items if _is_judicial_item(it)]
+    jur_other_ordered = [
+        it for it in jur_items
+        if (not _is_admin_item(it)) and (not _is_judicial_item(it))
+    ]
+    jur_items = jur_admin_ordered + jur_judicial_ordered + jur_other_ordered
 
     jur_lines = [
         "- etiqueta: {label} | codigo: {codigo} | tipo: {tipo} | fecha: {fecha} | "
