@@ -28,3 +28,4 @@ python-telegram-bot>=21.0
 # API backend
 fastapi>=0.115.0
 uvicorn>=0.30.0
+psycopg[binary]>=3.2.0

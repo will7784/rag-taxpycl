@@ -15,6 +15,13 @@ from rich.console import Console
 import config
 from rag_graph import RAGGraph
 
+try:
+    import psycopg
+    from psycopg.rows import dict_row
+except Exception:  # pragma: no cover - fallback en entornos sin psycopg
+    psycopg = None
+    dict_row = None
+
 console = Console()
 app = FastAPI(title="Taxpy API MVP", version="0.1.0")
 rag = RAGGraph()
@@ -53,9 +60,14 @@ class ApiUser:
 
 
 class ApiUsageStore:
-    def __init__(self, db_path: Path):
+    def __init__(self, db_path: Path, database_url: str = ""):
         self.db_path = db_path
-        self.db_path.parent.mkdir(parents=True, exist_ok=True)
+        self.database_url = (database_url or "").strip()
+        self.use_postgres = self.database_url.startswith("postgresql://") or self.database_url.startswith("postgres://")
+        if self.use_postgres and psycopg is None:
+            raise RuntimeError("DATABASE_URL definido pero psycopg no está instalado")
+        if not self.use_postgres:
+            self.db_path.parent.mkdir(parents=True, exist_ok=True)
         self._init_db()
 
     def _connect(self) -> sqlite3.Connection:
@@ -63,12 +75,52 @@ class ApiUsageStore:
         conn.row_factory = sqlite3.Row
         return conn
 
+    def _connect_pg(self):
+        assert psycopg is not None
+        return psycopg.connect(self.database_url, row_factory=dict_row)
+
     @staticmethod
     def _month_key(now: Optional[datetime] = None) -> str:
         dt = now or datetime.utcnow()
         return dt.strftime("%Y-%m")
 
     def _init_db(self) -> None:
+        if self.use_postgres:
+            with self._connect_pg() as conn:
+                with conn.cursor() as cur:
+                    cur.execute(
+                        """
+                        CREATE TABLE IF NOT EXISTS api_users (
+                            user_id TEXT PRIMARY KEY,
+                            plan TEXT NOT NULL DEFAULT 'free',
+                            month_key TEXT NOT NULL,
+                            queries_used INTEGER NOT NULL DEFAULT 0,
+                            free_quota INTEGER NOT NULL DEFAULT 10,
+                            created_at TEXT NOT NULL,
+                            last_seen_at TEXT NOT NULL
+                        );
+                        """
+                    )
+                    cur.execute(
+                        """
+                        CREATE TABLE IF NOT EXISTS api_usage_events (
+                            id BIGSERIAL PRIMARY KEY,
+                            user_id TEXT NOT NULL,
+                            month_key TEXT NOT NULL,
+                            mode TEXT NOT NULL,
+                            question TEXT NOT NULL,
+                            created_at TEXT NOT NULL,
+                            FOREIGN KEY(user_id) REFERENCES api_users(user_id)
+                        );
+                        """
+                    )
+                    cur.execute(
+                        "CREATE INDEX IF NOT EXISTS idx_api_usage_user_month "
+                        "ON api_usage_events(user_id, month_key)"
+                    )
+                conn.commit()
+            return
+
         with self._connect() as conn:
             conn.executescript(
                 """
@@ -101,6 +153,52 @@ class ApiUsageStore:
     def ensure_user(self, user_id: str) -> ApiUser:
         now_iso = datetime.utcnow().isoformat(timespec="seconds")
         current_month = self._month_key()
+        if self.use_postgres:
+            with self._connect_pg() as conn:
+                with conn.cursor() as cur:
+                    cur.execute("SELECT * FROM api_users WHERE user_id=%s", (user_id,))
+                    row = cur.fetchone()
+                    if row is None:
+                        cur.execute(
+                            """
+                            INSERT INTO api_users (
+                                user_id, plan, month_key, queries_used, free_quota,
+                                created_at, last_seen_at
+                            ) VALUES (%s, 'free', %s, 0, %s, %s, %s)
+                            """,
+                            (
+                                user_id,
+                                current_month,
+                                config.TELEGRAM_FREE_QUERIES_PER_MONTH,
+                                now_iso,
+                                now_iso,
+                            ),
+                        )
+                        cur.execute("SELECT * FROM api_users WHERE user_id=%s", (user_id,))
+                        row = cur.fetchone()
+                    else:
+                        updates = {"last_seen_at": now_iso}
+                        if row["month_key"] != current_month:
+                            updates["month_key"] = current_month
+                            updates["queries_used"] = 0
+                            updates["free_quota"] = config.TELEGRAM_FREE_QUERIES_PER_MONTH
+                        set_sql = ", ".join(f"{k}=%s" for k in updates.keys())
+                        cur.execute(
+                            f"UPDATE api_users SET {set_sql} WHERE user_id=%s",
+                            (*updates.values(), user_id),
+                        )
+                        cur.execute("SELECT * FROM api_users WHERE user_id=%s", (user_id,))
+                        row = cur.fetchone()
+                conn.commit()
+            assert row is not None
+            return ApiUser(
+                user_id=row["user_id"],
+                month_key=row["month_key"],
+                queries_used=row["queries_used"],
+                free_quota=row["free_quota"],
+                plan=row["plan"],
+            )
+
         with self._connect() as conn:
             row = conn.execute(
                 "SELECT * FROM api_users WHERE user_id=?",
@@ -153,6 +251,33 @@ class ApiUsageStore:
     def register_usage(self, user_id: str, mode: str, question: str) -> ApiUser:
         now_iso = datetime.utcnow().isoformat(timespec="seconds")
         month = self._month_key()
+        if self.use_postgres:
+            with self._connect_pg() as conn:
+                with conn.cursor() as cur:
+                    cur.execute(
+                        "UPDATE api_users SET queries_used=queries_used+1, last_seen_at=%s "
+                        "WHERE user_id=%s",
+                        (now_iso, user_id),
+                    )
+                    cur.execute(
+                        """
+                        INSERT INTO api_usage_events (user_id, month_key, mode, question, created_at)
+                        VALUES (%s, %s, %s, %s, %s)
+                        """,
+                        (user_id, month, mode, question[:2000], now_iso),
+                    )
+                    cur.execute("SELECT * FROM api_users WHERE user_id=%s", (user_id,))
+                    row = cur.fetchone()
+                conn.commit()
+            assert row is not None
+            return ApiUser(
+                user_id=row["user_id"],
+                month_key=row["month_key"],
+                queries_used=row["queries_used"],
+                free_quota=row["free_quota"],
+                plan=row["plan"],
+            )
+
         with self._connect() as conn:
             conn.execute(
                 "UPDATE api_users SET queries_used=queries_used+1, last_seen_at=? "
@@ -180,7 +305,7 @@ class ApiUsageStore:
         )
 
 
-store = ApiUsageStore(config.API_DB_PATH)
+store = ApiUsageStore(config.API_DB_PATH, config.DATABASE_URL)
 
 
 class AskRequest(BaseModel):
