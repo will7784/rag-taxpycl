@@ -9,6 +9,8 @@ from pathlib import Path
 from typing import Literal, Optional
 
 from fastapi import FastAPI, Header, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field
 from rich.console import Console
 
@@ -25,6 +27,15 @@ except Exception:  # pragma: no cover - fallback en entornos sin psycopg
 
 console = Console()
 app = FastAPI(title="Taxpy API MVP", version="0.1.0")
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=False,
+    allow_methods=["GET", "POST"],
+    allow_headers=["*"],
+)
+
 rag = RAGGraph()
 
 
@@ -351,15 +362,6 @@ async def health() -> dict:
     return {"status": "ok", "service": "taxpy-api", "time": datetime.utcnow().isoformat()}
 
 
-@app.get("/")
-async def root() -> dict:
-    return {
-        "service": "taxpy-api",
-        "status": "ok",
-        "endpoints": ["/health", "/usage/{user_id}", "/ask", "/docs"],
-    }
-
-
 @app.get("/rag-stats")
 async def rag_stats(
     authorization: str | None = Header(default=None),
@@ -447,3 +449,8 @@ async def ask(
         month_key=updated.month_key,
         mode=payload.mode,
     )
+
+
+_static_dir = Path(__file__).parent / "static"
+if _static_dir.exists():
+    app.mount("/", StaticFiles(directory=str(_static_dir), html=True), name="static")
