@@ -2,7 +2,9 @@ from __future__ import annotations
 
 import asyncio
 import sqlite3
+import subprocess
 import sys
+from contextlib import asynccontextmanager
 from dataclasses import dataclass
 from datetime import datetime
 from pathlib import Path
@@ -18,6 +20,37 @@ import config
 from rag_graph import RAGGraph
 from vector_store import VectorStoreManager
 
+
+def _auto_ingest_if_empty() -> None:
+    """Si el vector store está vacío, ejecuta la ingesta en background."""
+    try:
+        vs = VectorStoreManager()
+        stats = vs.get_collection_stats()
+        total = int(stats.get("total_documents", 0))
+        if total == 0:
+            console.print("[yellow]⚡ ChromaDB vacío — iniciando ingesta automática...[/yellow]")
+            result = subprocess.run(
+                [sys.executable, "main.py", "ingest"],
+                capture_output=False,
+                text=True,
+            )
+            if result.returncode == 0:
+                console.print("[green]✅ Ingesta completada[/green]")
+            else:
+                console.print(f"[red]❌ Ingesta falló (código {result.returncode})[/red]")
+        else:
+            console.print(f"[green]✅ ChromaDB listo ({total} documentos)[/green]")
+    except Exception as e:
+        console.print(f"[red]⚠️  Error verificando ChromaDB: {e}[/red]")
+
+
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    # Startup: verificar e ingestar si es necesario
+    await asyncio.to_thread(_auto_ingest_if_empty)
+    yield
+    # Shutdown: nada que limpiar
+
 try:
     import psycopg
     from psycopg.rows import dict_row
@@ -26,7 +59,7 @@ except Exception:  # pragma: no cover - fallback en entornos sin psycopg
     dict_row = None
 
 console = Console()
-app = FastAPI(title="Taxpy API MVP", version="0.1.0")
+app = FastAPI(title="Taxpy API MVP", version="0.1.0", lifespan=lifespan)
 
 app.add_middleware(
     CORSMiddleware,
