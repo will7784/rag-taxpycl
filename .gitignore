@@ -14,12 +14,32 @@ __pycache__/
 # Logs
 logs/
 *.log
+SESSION_LOG.md
 
 # Bases/vector stores y artefactos locales
 chroma_db/
 *.sqlite3
+taxpy_writer.sqlite3
+notebooklm_state.json
 
-# IDE/SO
+# Archivos generados
+exports/
+payload.json
+test_merge.pdf
+
+# Datos del usuario (no subir al repo)
+notes/
+documents/_pdf_download_state.json
+documents/jurisprudencia_sii/_sync_state.json
+documents/jurisprudencia_sii_circulares/_pdf/
+documents/notebooklm_sources/
+
+# Documentación obsoleta del proyecto anterior
+docs/
+sql/
+
+# Directorios de agente/IDE
+.claude/
 .DS_Store
 Thumbs.db
 .idea/
